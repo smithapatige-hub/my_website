@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Smitha Patige — Senior Product Manager focused on AI, data, CRM and enterprise platforms.">
+  <title>Smitha Patige | Product, AI & Enterprise Platforms</title>
+  <style>
+    :root { --bg:#101010; --surface:#1b1b1b; --ink:#f5f5f1; --muted:#b3b3b3; --red:#e50914; --line:rgba(255,255,255,.12); --radius:12px; --max:1180px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:linear-gradient(180deg,#080808 0,#141414 42%,#101010 100%);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    a{color:#fff;text-decoration:none} a:hover{color:#ff3942;text-decoration:none}
+    .nav-wrap{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    nav{max-width:var(--max);margin:auto;padding:0 26px;min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{color:var(--red);font-size:23px;font-weight:900;letter-spacing:-.06em;white-space:nowrap;text-transform:uppercase}
+    .nav-links{display:flex;gap:22px;align-items:center;font-size:13px}.nav-links a{color:#e5e5e5}.nav-links a:hover{color:#fff}
+    .hero{position:relative;isolation:isolate;min-height:520px;background:radial-gradient(ellipse at 72% 40%,rgba(111,0,0,.42),transparent 36%),linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 36%,rgba(9,9,9,.52) 72%,#090909 100%);color:#fff;padding:100px max(26px,calc((100vw - var(--max))/2)) 80px;overflow:hidden}
+    .hero:before{content:"";position:absolute;z-index:-1;right:-5%;top:0;width:58%;height:100%;background:linear-gradient(130deg,transparent 18%,rgba(229,9,20,.13) 45%,rgba(45,0,0,.2) 60%,transparent 80%);transform:skewX(-12deg)}
+    .eyebrow{color:#f3b2b5;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
+    h1{font-size:clamp(44px,7vw,82px);letter-spacing:-.055em;line-height:.98;margin:18px 0 24px;font-weight:900;max-width:850px}
+    .hero p{color:#dedede;font-size:clamp(17px,2vw,21px);max-width:650px;margin:0;letter-spacing:-.015em}
+    .hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;font-size:14px;font-weight:700}
+    .hero-actions a{padding:11px 18px;border-radius:5px;background:var(--red);color:white}.hero-actions a+ a{background:rgba(109,109,110,.7)}
+    .hero-mark{position:absolute;right:10%;bottom:25px;width:280px;height:280px;z-index:-1;opacity:.9}
+    .orb{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff777d 0,#e50914 24%,#790008 54%,#190000 73%);filter:blur(1px);box-shadow:0 0 110px rgba(229,9,20,.18)}
+    .hero-mark:after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(90deg,transparent,rgba(0,0,0,.4))}
+    main{max-width:var(--max);margin:auto;padding:8px 26px 70px}section{scroll-margin-top:78px}
+    .section-heading{padding:54px 2px 22px}.section-heading h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.045em;line-height:1.1;margin:0 0 9px}.section-heading p{color:var(--muted);margin:0;font-size:16px;max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:linear-gradient(145deg,#202020,#171717);border:1px solid rgba(255,255,255,.055);border-radius:var(--radius);padding:27px;min-width:0;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+    .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-7{grid-column:span 7}.span-6{grid-column:span 6}.span-5{grid-column:span 5}.span-4{grid-column:span 4}
+    .card h3{font-size:21px;letter-spacing:-.025em;margin:0 0 10px;line-height:1.2}.card p{margin:0 0 12px;color:#c4c4c4}.card p:last-child{margin-bottom:0}
+    .metric{font-size:clamp(34px,4vw,48px);font-weight:900;letter-spacing:-.06em;line-height:1.1;margin-bottom:8px;color:#fff}.metric-label{color:#b3b3b3;font-size:13px}
+    .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric-tile{padding:23px;border-radius:10px;background:linear-gradient(140deg,#292929,#181818);border-bottom:3px solid var(--red)}.metric-tile .metric{font-size:clamp(27px,3vw,39px)}
+    .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:12px;padding:7px 10px;border-radius:4px;background:#303030;color:#eee;border:1px solid rgba(255,255,255,.06)}
+    .timeline{display:grid;gap:14px}.role-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:16px}.role-title{font-weight:750;font-size:18px;letter-spacing:-.02em}.role-meta{color:#aaa;font-size:13px}
+    ul{padding-left:20px;margin:14px 0 0}li{padding:0 0 8px 2px;color:#c4c4c4}li::marker{color:var(--red)}
+    .project{display:flex;flex-direction:column;min-height:100%;transition:transform .2s ease,border-color .2s ease}.project:hover{transform:translateY(-3px);border-color:rgba(229,9,20,.5)}.project-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.project-icon{width:42px;height:42px;border-radius:8px;background:#3a1114;color:#ff646b;display:grid;place-items:center;font-size:20px}.small-label{color:#f08b90;text-transform:uppercase;font-size:10px;letter-spacing:.12em;font-weight:800}.text-link{margin-top:auto;padding-top:16px;display:inline-block}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.contact-card{background:linear-gradient(130deg,#5b0006,#1b090a 65%,#191919);color:#fff;border-radius:var(--radius);padding:36px;border:1px solid rgba(229,9,20,.25)}.contact-card p{color:#d0c7c7;max-width:650px}.contact-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px}.contact-links a{color:#fff;background:var(--red);padding:10px 15px;border-radius:4px;font-weight:700;font-size:13px}.contact-links a+a{background:#444}
+    footer{text-align:center;color:#777;font-size:12px;padding:24px;border-top:1px solid rgba(255,255,255,.06)}
+    @media(max-width:760px){.nav-links{gap:12px;overflow-x:auto;justify-content:flex-end}.nav-links a{white-space:nowrap}.hero{padding-top:76px;min-height:490px}.hero-mark{right:-35px;bottom:10px;width:190px;height:190px;opacity:.48}.span-8,.span-7,.span-6,.span-5,.span-4{grid-column:span 12}.metrics-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.card{padding:22px}nav{padding:0 16px}main{padding-left:16px;padding-right:16px}}
+    @media(max-width:440px){.brand{font-size:18px}.nav-links{gap:10px;font-size:11px}.metrics-grid{gap:8px}.metric-tile{padding:16px}.hero-actions{align-items:flex-start;flex-direction:column;width:max-content}.hero h1{font-size:44px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">Smitha Patige</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#work">Experience</a>
+        <a href="#projects">AI Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="eyebrow">A portfolio of product stories</div>
+    <h1>Product thinking.<br>Technology at scale.<br>Real-world impact.</h1>
+    <p>Meet Smitha Patige. Senior Product Manager across AI, data, CRM and enterprise platforms.</p>
+    <div class="hero-actions">
+      <a href="#work">▶ &nbsp; Explore my work</a>
+      <a href="#about">More about me</a>
+    </div>
+    <div class="hero-mark" aria-hidden="true"><div class="orb"></div></div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="section-heading">
+        <h2>Technology depth.<br>Product thinking. Measurable impact.</h2>
+        <p>I bring 16+ years in technology, combining engineering foundations with product leadership across CRM, data, enterprise platforms and AI.</p>
+      </div>
+      <div class="grid">
+        <article class="card span-7">
+          <h3>My approach</h3>
+          <p>I focus on understanding the real problem, aligning teams around a clear outcome, and turning complex systems into experiences that work for people and the business.</p>
+          <p>My product work spans platform strategy and roadmaps, global stakeholder alignment, integrations, data governance, AI/ML capabilities and continuous improvement.</p>
+          <p>More recently, I’ve been prototyping AI-powered products and agentic workflows to explore where AI can genuinely solve a user problem—with attention to data readiness, guardrails and human oversight.</p>
+        </article>
+        <article class="card span-5">
+          <h3>Focus areas</h3>
+          <div class="tag-list">
+            <span class="tag">Product strategy & roadmaps</span><span class="tag">Enterprise CRM</span>
+            <span class="tag">Generative AI</span><span class="tag">AI agents</span>
+            <span class="tag">Data Cloud & Customer 360</span><span class="tag">LLMs & RAG</span>
+            <span class="tag">Platform modernisation</span><span class="tag">Integrations & APIs</span>
+            <span class="tag">Agile / SAFe</span><span class="tag">Responsible AI</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="section-heading">
+        <h2>Impact, in numbers.</h2>
+        <p>Selected outcomes from enterprise product and platform initiatives.</p>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-tile"><div class="metric">£90M</div><div class="metric-label">3-year ROI from a £1.5M platform investment</div></div>
+        <div class="metric-tile"><div class="metric">+22%</div><div class="metric-label">Revenue growth</div></div>
+        <div class="metric-tile"><div class="metric">65 → 92%</div><div class="metric-label">Forecast accuracy</div></div>
+        <div class="metric-tile"><div class="metric">+40%</div><div class="metric-label">Partner adoption</div></div>
+      </div>
+      <div class="grid" style="margin-top:16px">
+        <article class="card span-4"><div class="metric">−35%</div><h3>Data duplicates</h3><p>Entity-resolution capability improved data quality.</p></article>
+        <article class="card span-4"><div class="metric">+65%</div><h3>Productivity</h3><p>Intelligent automation helped teams work more efficiently.</p></article>
+        <article class="card span-4"><div class="metric">+28%</div><h3>Daily field visits</h3><p>Map-based route planning improved field-team effectiveness.</p></article>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="section-heading">
+        <h2>Experience</h2>
+        <p>From engineering and connected services to global product ownership.</p>
+      </div>
+      <div class="timeline">
+        <article class="card">
+          <div class="role-top"><div><div class="role-title">Senior Product Manager</div><div class="role-meta">GE Healthcare · Global enterprise platforms</div></div><div class="role-meta">Jan 2019 – Jan 2024</div></div>
+          <p>Owned product vision, strategy and roadmap for a global Salesforce platform supporting multi-region sales teams and 200+ integration partners across medical device categories.</p>
+          <ul>
+            <li>Led a £1.5M platform investment that delivered £90M in three-year ROI with six-month payback.</li>
+            <li>Drove 22% revenue growth, improved forecast accuracy from 65% to 92%, reduced churn from 18% to 14.5%, and increased partner adoption by 40%.</li>
+            <li>Delivered AI/ML capabilities including opportunity scoring, entity resolution and intelligent automation, with governance and bias monitoring.</li>
+            <li>Led Data Cloud / Customer 360 transformation, integrating Salesforce CRM, Marketo and enterprise data sources with data governance and lineage standards.</li>
+            <li>Piloted a Salesforce mobile route planner with 15 reps, contributing to 28% more daily visits, 32% lower travel costs and $3M+ new deal value.</li>
+            <li>Led 50+ engineers in a SAFe Agile environment, coordinating PI planning, sprint ceremonies and dependencies across four regions.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="role-top"><div><div class="role-title">Technical Product Specialist</div><div class="role-meta">HP · Managed Print Services & connected products</div></div><div class="role-meta">Aug 2012 – Jan 2019</div></div>
+          <p>Led development of a cross-platform mobile product connecting enterprise customers and field engineers to HP cloud services for real-time printer-fleet management.</p>
+          <ul>
+            <li>Owned the product lifecycle across iOS and Android, from requirements and delivery to stakeholder alignment and iteration.</li>
+            <li>Defined API contracts and integration architecture on Google Cloud Platform for telemetry ingestion, alerting and predictive analytics.</li>
+            <li>Built remote diagnostics that identified fleet issues and automatically raised service tickets.</li>
+            <li>Led a team of seven engineers and improved delivery velocity by 28% through Agile practices.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="role-top"><div><div class="role-title">Senior Software Engineer</div><div class="role-meta">HP</div></div><div class="role-meta">Nov 2011 – Jul 2012</div></div>
+          <p>Software engineering role supporting the foundation of a career spanning product development, integrations and enterprise technology.</p>
+        </article>
+        <article class="card">
+          <div class="role-top"><div><div class="role-title">Senior Software Engineer → Software Engineer</div><div class="role-meta">Delixus, Inc.</div></div><div class="role-meta">Jul 2007 – Oct 2011</div></div>
+          <p>Built a strong engineering foundation before moving into technical product and platform leadership.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-heading">
+        <h2>Exploring what AI can make possible.</h2>
+        <p>Hands-on concepts and prototypes connecting user needs with emerging AI capabilities.</p>
+      </div>
+      <div class="grid">
+        <article class="card span-6 project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">✳</div><span class="small-label">AI assistant concept</span></div>
+          <h3>Halo · School communication assistant</h3>
+          <p>An AI-powered concept that reviews school emails, identifies urgent actions and upcoming events, and personalises updates by a child’s name and class—helping parents avoid missing important information.</p>
+          <div class="tag-list"><span class="tag">Information extraction</span><span class="tag">Personalisation</span><span class="tag">Action prioritisation</span></div>
+        </article>
+        <article class="card span-6 project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">⌁</div><span class="small-label">Product prototype</span></div>
+          <h3>Dog Walker · Activity tracker</h3>
+          <p>Designed and prototyped a tracking and activity-management product, taking the concept from a user problem through to a working prototype using Lovable and Cursor.</p>
+          <div class="tag-list"><span class="tag">Product discovery</span><span class="tag">Rapid prototyping</span><span class="tag">Lovable</span><span class="tag">Cursor</span></div>
+        </article>
+        <article class="card span-6 project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">⌘</div><span class="small-label">Workflow automation</span></div>
+          <h3>AI research automation</h3>
+          <p>Built a workflow to collect, summarise and analyse LinkedIn posts, turning scattered content into structured, actionable insights.</p>
+          <div class="tag-list"><span class="tag">Automation</span><span class="tag">Summarisation</span><span class="tag">Insight generation</span></div>
+        </article>
+        <article class="card span-6 project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">◉</div><span class="small-label">Ongoing learning</span></div>
+          <h3>AI product management</h3>
+          <p>Developing a repeatable approach to evaluating GenAI, LLMs, RAG, agents and agentic workflows, including build-versus-buy decisions, data readiness, guardrails and human-in-the-loop design.</p>
+          <div class="tag-list"><span class="tag">GenAI</span><span class="tag">LLMs & RAG</span><span class="tag">Responsible AI</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-heading">
+        <h2>Learning & foundations</h2>
+      </div>
+      <div class="grid">
+        <article class="card span-7">
+          <h3>Education</h3>
+          <p><strong>Master of Computer Applications (MCA)</strong><br>ICFAI University, Dehradun</p>
+          <p><strong>Bachelor of Commerce (BCom)</strong><br>Little Flower English Medium Convent School <span style="font-size:12px;color:#6e6e73">(as listed in supplied profile)</span></p>
+        </article>
+        <article class="card span-5">
+          <h3>Certifications & learning</h3>
+          <ul>
+            <li>Certified SAFe® Product Owner / Product Manager</li>
+            <li>Artificial Intelligence Fundamentals</li>
+            <li>Getting Started in Google Analytics</li>
+            <li>MCP</li>
+            <li>AI Product Management programme (in progress)</li>
+          </ul>
+        </article>
+      </div>
+      <div class="grid" style="margin-top:16px">
+        <article class="card span-12">
+          <h3>Languages</h3>
+          <p>English · Hindi · Marathi · Kannada · Telugu</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading">
+        <h2>Let’s build something meaningful.</h2>
+        <p>Open to conversations about Senior Product Manager opportunities across AI, data, CRM and enterprise platforms.</p>
+      </div>
+      <div class="split">
+        <div class="contact-card">
+          <div class="eyebrow">Get in touch</div>
+          <h2 style="font-size:clamp(30px,4vw,46px);letter-spacing:-.05em;line-height:1.08;margin:14px 0">Good products start with good conversations.</h2>
+          <p>Based in the UK · Right to work in the UK · Open to Senior Product Manager roles.</p>
+          <div class="contact-links">
+            <a href="mailto:smitha.patige@gmail.com">Email me ↗</a>
+            <a href="https://www.linkedin.com/in/smithapatige" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Contact details</h3>
+          <p><strong>Email</strong><br><a href="mailto:smitha.patige@gmail.com">smitha.patige@gmail.com</a></p>
+          <p><strong>Phone</strong><br><a href="tel:+447561722202">+44 7561 722202</a></p>
+          <p><strong>Location</strong><br>Farnborough, England, United Kingdom</p>
+          <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/smithapatige" target="_blank" rel="noopener noreferrer">linkedin.com/in/smithapatige</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year">2026</span> Smitha Patige · Built as a single-page portfolio.</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
