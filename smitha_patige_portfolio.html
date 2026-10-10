@@ -4,97 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Smitha Patige — Senior Product Manager focused on AI, data, CRM and enterprise platforms.">
-  <title>Smitha Patige — Product, AI & Enterprise Platforms</title>
+  <title>Smitha Patige | Product, AI & Enterprise Platforms</title>
   <style>
-    :root {
-      --bg: #f5f5f7;
-      --surface: #ffffff;
-      --ink: #1d1d1f;
-      --muted: #6e6e73;
-      --blue: #06c;
-      --line: rgba(29,29,31,.1);
-      --radius: 28px;
-      --max: 1120px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; background: var(--bg); color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-        "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.55; -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .nav-wrap { position: sticky; top: 0; z-index: 10; background: rgba(245,245,247,.82); backdrop-filter: saturate(180%) blur(18px); border-bottom: 1px solid rgba(0,0,0,.06); }
-    nav { max-width: var(--max); margin: auto; padding: 0 24px; min-height: 48px; display:flex; align-items:center; justify-content:space-between; gap: 18px; }
-    .brand { color: var(--ink); font-size: 14px; font-weight: 650; letter-spacing: -.02em; white-space: nowrap; }
-    .nav-links { display:flex; gap: 22px; align-items:center; font-size: 12px; }
-    .nav-links a { color: #424245; }
-    .nav-links a:hover { color: var(--blue); text-decoration:none; }
-    .hero { background: #000; color: white; text-align:center; padding: 94px 24px 86px; overflow:hidden; }
-    .eyebrow { color: #a1a1a6; text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 700; }
-    h1 { font-size: clamp(44px, 7vw, 82px); letter-spacing: -.065em; line-height: .98; margin: 20px 0 22px; font-weight: 700; }
-    .hero p { color: #b8b8bd; font-size: clamp(17px, 2vw, 22px); max-width: 720px; margin: 0 auto; letter-spacing: -.02em; }
-    .hero-actions { display:flex; justify-content:center; gap: 22px; margin-top: 30px; flex-wrap:wrap; font-size: 16px; }
-    .hero-actions a { color: #2997ff; }
-    .hero-mark { margin: 52px auto 0; width: min(620px, 90%); height: 130px; position:relative; }
-    .orb { position:absolute; width: 180px; height:180px; border-radius:50%; filter: blur(1px); opacity:.95; top: 0; left:50%; transform:translateX(-50%); background: radial-gradient(circle at 35% 30%, #d8efff 0, #69b7ff 17%, #2855e8 44%, #662ed8 67%, #07070a 75%); box-shadow: 0 0 90px rgba(68,106,255,.22); }
-    .hero-mark:after { content:""; position:absolute; inset: 55px 0 0; background: linear-gradient(transparent, #000 80%); }
-    main { max-width: var(--max); margin: auto; padding: 22px 24px 70px; }
-    section { scroll-margin-top: 70px; }
-    .section-heading { padding: 54px 4px 24px; }
-    .section-heading h2 { font-size: clamp(30px, 4vw, 44px); letter-spacing: -.055em; line-height:1.08; margin: 0 0 10px; }
-    .section-heading p { color: var(--muted); margin:0; font-size:17px; max-width:720px; }
-    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .card { background: var(--surface); border-radius: var(--radius); padding: 28px; min-width:0; }
-    .span-12 { grid-column: span 12; } .span-8 { grid-column: span 8; } .span-7 { grid-column: span 7; } .span-6 { grid-column: span 6; } .span-5 { grid-column: span 5; } .span-4 { grid-column: span 4; }
-    .card h3 { font-size: 22px; letter-spacing: -.035em; margin: 0 0 10px; line-height:1.2; }
-    .card p { margin: 0 0 12px; color: var(--muted); }
-    .card p:last-child { margin-bottom:0; }
-    .metric { font-size: clamp(34px, 4vw, 48px); font-weight:700; letter-spacing:-.06em; line-height:1.1; margin-bottom: 8px; }
-    .metric-label { color:var(--muted); font-size:14px; }
-    .metrics-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
-    .metric-tile { padding:24px; border-radius:22px; background:#fff; }
-    .metric-tile .metric { font-size: clamp(27px, 3vw, 39px); }
-    .tag-list { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
-    .tag { font-size:12px; padding:7px 11px; border-radius:999px; background:#f5f5f7; color:#424245; }
-    .timeline { display:grid; gap:14px; }
-    .role-top { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
-    .role-title { font-weight:650; font-size:18px; letter-spacing:-.02em; }
-    .role-meta { color:var(--muted); font-size:13px; }
-    ul { padding-left:20px; margin:14px 0 0; }
-    li { padding: 0 0 8px 2px; color:#424245; }
-    li::marker { color:#8e8e93; }
-    .project { display:flex; flex-direction:column; min-height:100%; }
-    .project-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px; }
-    .project-icon { width:42px; height:42px; border-radius:14px; background:#f5f5f7; display:grid; place-items:center; font-size:20px; }
-    .small-label { color:var(--muted); text-transform:uppercase; font-size:11px; letter-spacing:.12em; font-weight:700; }
-    .text-link { margin-top:auto; padding-top:16px; display:inline-block; }
-    .split { display:grid; grid-template-columns: 1.1fr .9fr; gap:16px; }
-    .contact-card { background:#1d1d1f; color:#fff; border-radius:var(--radius); padding:36px; }
-    .contact-card p { color:#b8b8bd; max-width:650px; }
-    .contact-links { display:flex; flex-wrap:wrap; gap:18px; margin-top:22px; }
-    .contact-links a { color:#2997ff; }
-    footer { text-align:center; color:var(--muted); font-size:12px; padding:24px; }
-    @media (max-width: 760px) {
-      .nav-links { gap:12px; overflow-x:auto; justify-content:flex-end; }
-      .nav-links a { white-space:nowrap; }
-      .hero { padding-top:74px; }
-      .span-8,.span-7,.span-6,.span-5,.span-4 { grid-column:span 12; }
-      .metrics-grid { grid-template-columns:repeat(2,1fr); }
-      .split { grid-template-columns:1fr; }
-      .card { padding:23px; border-radius:23px; }
-      nav { padding:0 16px; }
-      main { padding-left:16px; padding-right:16px; }
-    }
-    @media (max-width: 440px) {
-      .brand { font-size:12px; }
-      .nav-links { gap:10px; font-size:11px; }
-      .metrics-grid { gap:8px; }
-      .metric-tile { padding:17px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+    :root { --bg:#101010; --surface:#1b1b1b; --ink:#f5f5f1; --muted:#b3b3b3; --red:#e50914; --line:rgba(255,255,255,.12); --radius:12px; --max:1180px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:linear-gradient(180deg,#080808 0,#141414 42%,#101010 100%);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    a{color:#fff;text-decoration:none} a:hover{color:#ff3942;text-decoration:none}
+    .nav-wrap{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    nav{max-width:var(--max);margin:auto;padding:0 26px;min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{color:var(--red);font-size:23px;font-weight:900;letter-spacing:-.06em;white-space:nowrap;text-transform:uppercase}
+    .nav-links{display:flex;gap:22px;align-items:center;font-size:13px}.nav-links a{color:#e5e5e5}.nav-links a:hover{color:#fff}
+    .hero{position:relative;isolation:isolate;min-height:520px;background:radial-gradient(ellipse at 72% 40%,rgba(111,0,0,.42),transparent 36%),linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 36%,rgba(9,9,9,.52) 72%,#090909 100%);color:#fff;padding:100px max(26px,calc((100vw - var(--max))/2)) 80px;overflow:hidden}
+    .hero:before{content:"";position:absolute;z-index:-1;right:-5%;top:0;width:58%;height:100%;background:linear-gradient(130deg,transparent 18%,rgba(229,9,20,.13) 45%,rgba(45,0,0,.2) 60%,transparent 80%);transform:skewX(-12deg)}
+    .eyebrow{color:#f3b2b5;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
+    h1{font-size:clamp(44px,7vw,82px);letter-spacing:-.055em;line-height:.98;margin:18px 0 24px;font-weight:900;max-width:850px}
+    .hero p{color:#dedede;font-size:clamp(17px,2vw,21px);max-width:650px;margin:0;letter-spacing:-.015em}
+    .hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;font-size:14px;font-weight:700}
+    .hero-actions a{padding:11px 18px;border-radius:5px;background:var(--red);color:white}.hero-actions a+ a{background:rgba(109,109,110,.7)}
+    .hero-mark{position:absolute;right:10%;bottom:25px;width:280px;height:280px;z-index:-1;opacity:.9}
+    .orb{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff777d 0,#e50914 24%,#790008 54%,#190000 73%);filter:blur(1px);box-shadow:0 0 110px rgba(229,9,20,.18)}
+    .hero-mark:after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(90deg,transparent,rgba(0,0,0,.4))}
+    main{max-width:var(--max);margin:auto;padding:8px 26px 70px}section{scroll-margin-top:78px}
+    .section-heading{padding:54px 2px 22px}.section-heading h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.045em;line-height:1.1;margin:0 0 9px}.section-heading p{color:var(--muted);margin:0;font-size:16px;max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:linear-gradient(145deg,#202020,#171717);border:1px solid rgba(255,255,255,.055);border-radius:var(--radius);padding:27px;min-width:0;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+    .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-7{grid-column:span 7}.span-6{grid-column:span 6}.span-5{grid-column:span 5}.span-4{grid-column:span 4}
+    .card h3{font-size:21px;letter-spacing:-.025em;margin:0 0 10px;line-height:1.2}.card p{margin:0 0 12px;color:#c4c4c4}.card p:last-child{margin-bottom:0}
+    .metric{font-size:clamp(34px,4vw,48px);font-weight:900;letter-spacing:-.06em;line-height:1.1;margin-bottom:8px;color:#fff}.metric-label{color:#b3b3b3;font-size:13px}
+    .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric-tile{padding:23px;border-radius:10px;background:linear-gradient(140deg,#292929,#181818);border-bottom:3px solid var(--red)}.metric-tile .metric{font-size:clamp(27px,3vw,39px)}
+    .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:12px;padding:7px 10px;border-radius:4px;background:#303030;color:#eee;border:1px solid rgba(255,255,255,.06)}
+    .timeline{display:grid;gap:14px}.role-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:16px}.role-title{font-weight:750;font-size:18px;letter-spacing:-.02em}.role-meta{color:#aaa;font-size:13px}
+    ul{padding-left:20px;margin:14px 0 0}li{padding:0 0 8px 2px;color:#c4c4c4}li::marker{color:var(--red)}
+    .project{display:flex;flex-direction:column;min-height:100%;transition:transform .2s ease,border-color .2s ease}.project:hover{transform:translateY(-3px);border-color:rgba(229,9,20,.5)}.project-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.project-icon{width:42px;height:42px;border-radius:8px;background:#3a1114;color:#ff646b;display:grid;place-items:center;font-size:20px}.small-label{color:#f08b90;text-transform:uppercase;font-size:10px;letter-spacing:.12em;font-weight:800}.text-link{margin-top:auto;padding-top:16px;display:inline-block}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.contact-card{background:linear-gradient(130deg,#5b0006,#1b090a 65%,#191919);color:#fff;border-radius:var(--radius);padding:36px;border:1px solid rgba(229,9,20,.25)}.contact-card p{color:#d0c7c7;max-width:650px}.contact-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px}.contact-links a{color:#fff;background:var(--red);padding:10px 15px;border-radius:4px;font-weight:700;font-size:13px}.contact-links a+a{background:#444}
+    footer{text-align:center;color:#777;font-size:12px;padding:24px;border-top:1px solid rgba(255,255,255,.06)}
+    @media(max-width:760px){.nav-links{gap:12px;overflow-x:auto;justify-content:flex-end}.nav-links a{white-space:nowrap}.hero{padding-top:76px;min-height:490px}.hero-mark{right:-35px;bottom:10px;width:190px;height:190px;opacity:.48}.span-8,.span-7,.span-6,.span-5,.span-4{grid-column:span 12}.metrics-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.card{padding:22px}nav{padding:0 16px}main{padding-left:16px;padding-right:16px}}
+    @media(max-width:440px){.brand{font-size:18px}.nav-links{gap:10px;font-size:11px}.metrics-grid{gap:8px}.metric-tile{padding:16px}.hero-actions{align-items:flex-start;flex-direction:column;width:max-content}.hero h1{font-size:44px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
   </style>
 </head>
 <body>
@@ -112,12 +57,12 @@
   </div>
 
   <header class="hero" id="home">
-    <div class="eyebrow">Product · Data · AI</div>
-    <h1>Turning complex<br>technology into<br>meaningful products.</h1>
-    <p>Smitha Patige — Senior Product Manager building enterprise platforms, connected data experiences and practical AI-powered solutions.</p>
+    <div class="eyebrow">A portfolio of product stories</div>
+    <h1>Product thinking.<br>Technology at scale.<br>Real-world impact.</h1>
+    <p>Meet Smitha Patige. Senior Product Manager across AI, data, CRM and enterprise platforms.</p>
     <div class="hero-actions">
-      <a href="#work">Explore my work ↘</a>
-      <a href="https://www.linkedin.com/in/smithapatige" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+      <a href="#work">▶ &nbsp; Explore my work</a>
+      <a href="#about">More about me</a>
     </div>
     <div class="hero-mark" aria-hidden="true"><div class="orb"></div></div>
   </header>
